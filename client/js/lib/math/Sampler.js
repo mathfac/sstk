@@ -51,7 +51,7 @@ Sampler.prototype.sample = function(opts) {
     // Sample single
     if (opts.scorer) { //weighted
       if (isArray) {
-        return this.__sampleOneWeighted(opts.elements);
+        return this.__sampleOneWeighted(opts.elements, opts.scorer);
       } else {
         return this.__sampleOneWeightedStream(opts.elements, opts.scorer);
       }

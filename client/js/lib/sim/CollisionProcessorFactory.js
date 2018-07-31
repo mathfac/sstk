@@ -22,6 +22,7 @@ CollisionProcessorFactory.createCollisionProcessor = function (opts) {
     debug: false,
     mode: 'raycast'
   });
+
   if (opts.mode === 'null') {
     return new CollisionProcessorNull(opts);
   } else if (opts.mode === 'raycast') {
